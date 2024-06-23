@@ -11,16 +11,7 @@ set(CMAKE_AUTORCC ON)
 
 list(APPEND CMAKE_PREFIX_PATH "/Users/oleksand.shcherbinin/Qt/6.7.0/macos/lib/cmake")
 
-find_package(QT
-        NAMES Qt6
-        REQUIRED COMPONENTS
-        Core5Compat
-        Core
-        Quick
-        Widgets
-        LinguistTools
-)
-find_package(Qt${QT_VERSION_MAJOR}
+find_package(Qt6
         REQUIRED COMPONENTS
         Core
         Quick

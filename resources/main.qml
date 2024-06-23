@@ -14,9 +14,9 @@ ApplicationWindow {
 
         delegate: Row {
             spacing: 10
-            Text { text: model.firstName; width: 200 }
-            Text { text: model.lastName; width: 200 }
-            Text { text: model.phoneNumber; width: 200 }
+            Text { text: model.firstName; width: 100 }
+            Text { text: model.lastName; width: 100 }
+            Text { text: model.phoneNumber; width: 100 }
         }
 
         ScrollBar.vertical: ScrollBar { }

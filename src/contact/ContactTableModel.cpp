@@ -10,7 +10,7 @@ int ContactTableModel::rowCount(const QModelIndex &parent) const {
 
 int ContactTableModel::columnCount(const QModelIndex &parent) const {
     Q_UNUSED(parent);
-    return 1;
+    return 3;
 }
 
 QVariant ContactTableModel::data(const QModelIndex &index, int role) const {

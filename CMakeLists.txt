@@ -19,12 +19,8 @@ find_package(Qt6
         LinguistTools
 )
 
-add_executable(${PROJECT_NAME}
-        src/main.cpp
-        resources/resources.qrc
-        src/contact/ContactTableModel.h
-        src/contact/ContactTableModel.cpp
-)
+file(GLOB_RECURSE SOURCES "src/*.cpp" "src/*.h" "resources/*.qrc")
+add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
         Qt${QT_VERSION_MAJOR}::Core
